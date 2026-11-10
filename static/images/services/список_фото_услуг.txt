@@ -1,0 +1,31 @@
+vyezd-mastera.jpg  ←  Выезд мастера
+diagnostika.jpg  ←  Диагностика
+ustanovka-windows-pod-klyuch-1.jpg  ←  Установка Windows под ключ №1
+ustanovka-linux-bez-sohraneniya.jpg  ←  Установка Linux (без сохранения)
+ustanovka-linux-s-sohraneniem.jpg  ←  Установка Linux (с сохранением)
+dvoynaya-zagruzka-win-linux.jpg  ←  Двойная загрузка (Win + Linux)
+ustanovka-programm.jpg  ←  Установка программ
+zamena-zhestkogo-diska.jpg  ←  Замена жёсткого диска
+zamena-operativnoy-pamyati.jpg  ←  Замена оперативной памяти
+zamena-videokarty.jpg  ←  Замена видеокарты
+zamena-materinskoy-platy.jpg  ←  Замена материнской платы
+zamena-bloka-pitaniya.jpg  ←  Замена блока питания
+chistka-kompyutera-ot-pyli.jpg  ←  Чистка компьютера от пыли
+zamena-termopasty.jpg  ←  Замена термопасты
+polnaya-profilaktika-pk-noutbuk.jpg  ←  Полная профилактика ПК/ноутбук
+udalenie-virusov-i-vredonosnogo-po.jpg  ←  Удаление вирусов и вредоносного ПО
+udalenie-rutkitov-linux.jpg  ←  Удаление руткитов Linux
+vosstanovlenie-posle-virusnoy-ataki.jpg  ←  Восстановление после вирусной атаки
+vosstanovlenie-s-zhestkogo-diska.jpg  ←  Восстановление с жёсткого диска
+vosstanovlenie-s-flesh-nakopitelya.jpg  ←  Восстановление с флеш-накопителя
+hdd-zhestkiy-disk.jpg  ←  HDD (жёсткий диск)
+ssd-sata.jpg  ←  SSD (SATA)
+m2-ssd-nvme.jpg  ←  M.2 SSD / NVMe
+nastroyka-wi-fi-routera.jpg  ←  Настройка Wi-Fi роутера
+nastroyka-lokalnoy-seti.jpg  ←  Настройка локальной сети
+setevye-sluzhby-linux.jpg  ←  Сетевые службы Linux
+ustranenie-problem-s-internetom.jpg  ←  Устранение проблем с интернетом
+sborka-kompyutera-na-zakaz.jpg  ←  Сборка компьютера на заказ
+modernizatsiya-kompyutera.jpg  ←  Модернизация компьютера
+nastroyka-udalennogo-dostupa-ssh-vnc.jpg  ←  Настройка удалённого доступа (SSH, VNC)
+optimizatsiya-proizvoditelnosti-linux.jpg  ←  Оптимизация производительности Linux
