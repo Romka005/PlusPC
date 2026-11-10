@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block title %}Наши услуги - PC Repair Service{% endblock %}
+
+{% block content %}
+    <!-- ===== ШАПКА СТРАНИЦЫ (ЗАГОЛОВОК + ПОДЗАГОЛОВОК) ===== -->
+    <section class="services-hero">
+        <div class="container">
+            <h1>Наши услуги</h1>
+            <p>Полный спектр услуг по ремонту и обслуживанию компьютерной техники</p>
+        </div>
+    </section>
+
+    <!-- ===== СПИСОК УСЛУГ (СЕТКА КАРТОЧЕК) ===== -->
+    <section class="services-list">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Ремонт компьютеров</h3>
+                    <ul>
+                        <li>Замена блока питания</li>
+                        <li>Ремонт материнской платы</li>
+                        <li>Чистка от пыли</li>
+                        <li>Установка комплектующих</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Ремонт ноутбуков</h3>
+                    <ul>
+                        <li>Замена матрицы</li>
+                        <li>Ремонт клавиатуры</li>
+                        <li>Замена термопасты</li>
+                        <li>Ремонт разъемов</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <h3>Восстановление данных</h3>
+                    <ul>
+                        <li>Восстановление с HDD/SSD</li>
+                        <li>Спасение данных после удаления</li>
+                        <li>Восстановление RAID массивов</li>
+                        <li>Ремонт флешек</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-virus"></i>
+                    </div>
+                    <h3>Удаление вирусов</h3>
+                    <ul>
+                        <li>Полная очистка системы</li>
+                        <li>Восстановление после блокировщиков</li>
+                        <li>Настройка антивируса</li>
+                        <li>Резервное копирование</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Сетевые услуги</h3>
+                    <ul>
+                        <li>Настройка локальной сети</li>
+                        <li>Установка Wi-Fi роутеров</li>
+                        <li>Прокладка сетевых кабелей</li>
+                        <li>Настройка интернета</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Обслуживание</h3>
+                    <ul>
+                        <li>Плановое обслуживание</li>
+                        <li>Модернизация ПК</li>
+                        <li>Установка ОС и ПО</li>
+                        <li>Настройка под ключ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ТАБЛИЦА ПРИМЕРНЫХ ЦЕН ===== -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Примерные цены</h2>
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Стоимость</th>
+                            <th>Срок</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Диагностика</td>
+                            <td>Бесплатно</td>
+                            <td>30 мин</td>
+                        </tr>
+                        <tr>
+                            <td>Чистка от пыли</td>
+                            <td>от 1000 ₽</td>
+                            <td>1 час</td>
+                        </tr>
+                        <tr>
+                            <td>Замена термопасты</td>
+                            <td>от 800 ₽</td>
+                            <td>40 мин</td>
+                        </tr>
+                        <tr>
+                            <td>Установка ОС</td>
+                            <td>от 1500 ₽</td>
+                            <td>1-2 часа</td>
+                        </tr>
+                        <tr>
+                            <td>Замена матрицы ноутбука</td>
+                            <td>от 2500 ₽ + запчасть</td>
+                            <td>2 часа</td>
+                        </tr>
+                        <tr>
+                            <td>Восстановление данных</td>
+                            <td>от 2000 ₽</td>
+                            <td>от 2 часов</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,779 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<!-- ГЕРОЙ-СЕКЦИЯ СО СЛАЙД-ШОУ ИЗ 4 ИЗОБРАЖЕНИЙ -->
+<section class="hero slideshow-hero">
+    <div class="slideshow-container">
+        <div class="slide slide-1" style="background-image: url('{{ url_for('static', filename='images/BG_1.jpg') }}');"></div>
+        <div class="slide slide-2" style="background-image: url('{{ url_for('static', filename='images/BG_2.jpg') }}');"></div>
+        <div class="slide slide-3" style="background-image: url('{{ url_for('static', filename='images/BG_3.JPG') }}');"></div>
+        <div class="slideshow-overlay"></div>
+    </div>
+
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span>Ваш компьютер — наша забота</span>
+                <b>PlusPC</b>
+            </h1>
+            <p class="hero-subtitle">
+                Ремонт компьютеров в Саратове с возможностью выезда на дом. Работаем <b>быстро</b> и <b>качественно</b>, а главное — по <span class="hero-gold-shine">выгодным ценам</span>.
+            </p>            
+        <!-- КНОПКИ МЕССЕНДЖЕРОВ С ЛОГОТИПАМИ -->
+            <div class="hero-buttons">
+    <a href="https://t.me/pluspc64" target="_blank" class="btn-messenger telegram">
+        <i class="fab fa-telegram-plane"></i>
+        <span>Telegram</span>
+    </a>
+    <a href="https://vk.me/pluspc64" target="_blank" class="btn-messenger vk">
+        <i class="fab fa-vk"></i>
+        <span>VK</span>
+    </a>
+    <a href="mailto:pluspc.community@mail.ru" class="btn-messenger email">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+    </a>
+    <a href="https://t.me/pluspcreviews" target="_blank" class="btn-messenger reviews">
+        <i class="fas fa-star"></i>
+        <span>Отзывы</span>
+    </a>
+
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- СЕКЦИЯ "ПОЧЕМУ МЫ" -->
+<section id="why-us" class="section why-section">
+    <div class="container">
+        <!-- Заголовок секции -->
+        <div class="section-header">
+            <h2 class="section-title">Почему выбирают <span>PlusPC</span></h2>
+        </div>
+
+        <!-- Карточки -->
+        <div class="why-grid why-grid-icons">
+            <div class="why-card why-card-icon scroll-fade-up delay-1">
+                <div class="why-icon-placeholder"><i class="fas fa-hand-holding-dollar"></i></div>
+                <h3>Доступно каждому</h3>
+            </div>
+            <div class="why-card why-card-icon scroll-fade-up delay-2">
+                <div class="why-icon-placeholder"><i class="fas fa-users"></i></div>
+                <h3>Команда профессионалов</h3>
+            </div>
+            <div class="why-card why-card-icon scroll-fade-up delay-3">
+                <div class="why-icon-placeholder"><i class="fas fa-handshake"></i></div>
+                <h3>Нам можно доверять</h3>
+            </div>
+            <div class="why-card why-card-icon scroll-fade-up delay-4">
+                <div class="why-icon-placeholder"><i class="fas fa-comments"></i></div>
+                <h3>Индивидуальный подход</h3>
+            </div>
+        </div>
+
+        <div class="section-decoration scroll-draw" id="whyDecoration"></div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ "СФЕРА ДЕЯТЕЛЬНОСТИ HEADER" ===== -->
+<section id="our-works" class="works-section">
+    <div class="container">
+        <div class="works-header">
+            <h2 class="works-title"> <b>Сферы деятельности</b> </h2>
+        </div>
+
+        <!-- ==================== СЕКЦИЯ "СФЕРА ДЕЯТЕЛЬНОСТИ BODY" ==================== -->
+        <div id="repairWorks" class="works-grid active">
+            <div class="works-carousel-container">
+                <div class="works-carousel-wrapper">
+                    <div class="works-carousel" id="repairCarousel">
+                        <!-- Слайд 1: Ремонт и замена комплектующих -->
+                        <div class="works-slide">
+                            <div class="works-slide-content">
+                                <div class="works-slide-text">
+                                    <h3><b>Ремонт и замена комплектующих</b></h3>
+                                    Профессиональная диагностика и замена вышедших из строя компонентов: от материнской платы до SSD. Работаем только с оригинальными комплектующими проверенных производителей<br>
+                                </div>
+                                <div class="works-slide-image">
+                                    <img src="{{ url_for('static', filename='images/activity_1.jpg') }}" alt="Ремонт комплектующих">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Слайд 2: Установка программ, восстановление данных, удаление вирусов -->
+                        <div class="works-slide">
+                            <div class="works-slide-content">
+                                <div class="works-slide-text">
+                                    <h3><b>Установка ПО, восстановление данных, удаление вирусов</b></h3>
+                                    Комплексное решение любых программных проблем: установка Windows и Linux под ключ, настройка драйверов, удаление вредоносного ПО, восстановление удаленных файлов с любых носителей.
+                                </div>
+                                <div class="works-slide-image">
+                                    <img src="{{ url_for('static', filename='images/activity_2.jpg') }}" alt="Установка ПО">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Слайд 3: Прочее (сборка, модернизация, настройка Linux) -->
+                        <div class="works-slide">
+                            <div class="works-slide-content">
+                                <div class="works-slide-text">
+                                    <h3>Сборка ПК, модернизация</h3>
+                                    Поможем собрать компьютер под любые задачи, модернизировать существующую систему, настроить удаленный доступ и оптимизировать производительность Linux-систем.
+                                </div>
+                                <div class="works-slide-image">
+                                    <img src="{{ url_for('static', filename='images/activity_3.jpg') }}" alt="Сборка ПК">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кнопки навигации карусели -->
+                        <button class="carousel-nav prev" onclick="slideProjectCarousel('repair', 'prev')"></button>
+                        <button class="carousel-nav next" onclick="slideProjectCarousel('repair', 'next')"></button>                
+                    </div>
+
+                <!-- Индикаторы слайдов -->
+                <div class="carousel-dots" id="repairDots"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ УСЛУГ / КАЛЬКУЛЯТОР ===== -->
+<section id="services-calculator" class="section services-section">
+    <div class="container">
+        <h2 class="section-title">
+            <span>Услуги</span>
+        </h2>
+
+        <div class="calc-wrapper">
+            <div style="display: flex; gap: 40px; align-items: stretch; flex-wrap: wrap;">
+                <!-- ===== СТОЛБЕЦ: РЕМОНТ ТЕХНИКИ ===== -->
+                <div style="flex: 1; min-width: 300px; display: flex;">
+                    <div class="calc-column" style="width: 100%; display: flex; flex-direction: column;">
+                        <div class="calc-column-header">Ремонт техники</div>
+                        <div class="calc-column-body" style="flex: 1;">
+                            <!-- Базовые услуги -->
+                            <div class="calc-category">
+                                <div class="calc-category-title" onclick="toggleCalcAccordion(this)">
+                                    <span>Базовые услуги</span>
+                                    <span class="calc-acc-icon">▼</span>
+                                </div>
+                                <div class="calc-category-body">
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="500" data-image="{{ url_for('static', filename='images/services/vyezd-mastera.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Выезд мастера</span>
+                                        <span class="calc-service-price">500 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1500" data-image="{{ url_for('static', filename='images/services/diagnostika.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Диагностика</span>
+                                        <span class="calc-service-price">1 500 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Настройка и установка ПО -->
+                            <div class="calc-category">
+                                <div class="calc-category-title" onclick="toggleCalcAccordion(this)">
+                                    <span>Настройка и установка ПО</span>
+                                    <span class="calc-acc-icon">▼</span>
+                                </div>
+                                <div class="calc-category-body">
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="3600" data-image="{{ url_for('static', filename='images/services/ustanovka-windows-pod-klyuch-1.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <div class="calc-service-name-wrap">
+                                            <span class="calc-service-name">Установка Windows под ключ №1</span>
+                                            <span class="calc-service-desc">Без сохранения данных + драйвера + Office</span>
+                                        </div>
+                                        <span class="calc-service-price">3 600 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="3900">
+                                        <span class="calc-service-check">✓</span>
+                                        <div class="calc-service-name-wrap">
+                                            <span class="calc-service-name">Установка Windows под ключ №2</span>
+                                            <span class="calc-service-desc">С сохранением данных + драйвера + Office</span>
+                                        </div>
+                                        <span class="calc-service-price">3 900 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1500" data-image="{{ url_for('static', filename='images/services/ustanovka-linux-bez-sohraneniya.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Установка Linux (без сохранения)</span>
+                                        <span class="calc-service-price">от 1 500 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1800" data-image="{{ url_for('static', filename='images/services/ustanovka-linux-s-sohraneniem.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Установка Linux (с сохранением)</span>
+                                        <span class="calc-service-price">от 1 800 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="2500" data-image="{{ url_for('static', filename='images/services/dvoynaya-zagruzka-win-linux.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Двойная загрузка (Win + Linux)</span>
+                                        <span class="calc-service-price">от 2 500 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="800" data-image="{{ url_for('static', filename='images/services/ustanovka-programm.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Установка программ</span>
+                                        <span class="calc-service-price">800 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1200">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Специфическое ПО Linux</span>
+                                        <span class="calc-service-price">от 1 200 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Ремонт и замена комплектующих -->
+                            <div class="calc-category">
+                                <div class="calc-category-title" onclick="toggleCalcAccordion(this)">
+                                    <span>Ремонт и замена комплектующих</span>
+                                    <span class="calc-acc-icon">▼</span>
+                                </div>
+                                <div class="calc-category-body">
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="700" data-image="{{ url_for('static', filename='images/services/zamena-zhestkogo-diska.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Замена жёсткого диска</span>
+                                        <span class="calc-service-price">700 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="700" data-image="{{ url_for('static', filename='images/services/zamena-operativnoy-pamyati.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Замена оперативной памяти</span>
+                                        <span class="calc-service-price">700 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1500" data-image="{{ url_for('static', filename='images/services/zamena-videokarty.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Замена видеокарты</span>
+                                        <span class="calc-service-price">1 500 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="2000" data-image="{{ url_for('static', filename='images/services/zamena-materinskoy-platy.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Замена материнской платы</span>
+                                        <span class="calc-service-price">2 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1500" data-image="{{ url_for('static', filename='images/services/zamena-bloka-pitaniya.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Замена блока питания</span>
+                                        <span class="calc-service-price">1 500 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Профилактика -->
+                            <div class="calc-category">
+                                <div class="calc-category-title" onclick="toggleCalcAccordion(this)">
+                                    <span>Профилактика</span>
+                                    <span class="calc-acc-icon">▼</span>
+                                </div>
+                                <div class="calc-category-body">
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1000" data-image="{{ url_for('static', filename='images/services/chistka-kompyutera-ot-pyli.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Чистка компьютера от пыли</span>
+                                        <span class="calc-service-price">1 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="800" data-image="{{ url_for('static', filename='images/services/zamena-termopasty.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Замена термопасты</span>
+                                        <span class="calc-service-price">800 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1800" data-image="{{ url_for('static', filename='images/services/polnaya-profilaktika-pk-noutbuk.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Полная профилактика ПК/ноутбук</span>
+                                        <span class="calc-service-price">1 800 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Удаление вирусов -->
+                            <div class="calc-category">
+                                <div class="calc-category-title" onclick="toggleCalcAccordion(this)">
+                                    <span>Удаление вирусов</span>
+                                    <span class="calc-acc-icon">▼</span>
+                                </div>
+                                <div class="calc-category-body">
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="2000" data-image="{{ url_for('static', filename='images/services/udalenie-virusov-i-vredonosnogo-po.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Удаление вирусов и вредоносного ПО</span>
+                                        <span class="calc-service-price">2 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="2500" data-image="{{ url_for('static', filename='images/services/udalenie-rutkitov-linux.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Удаление руткитов Linux</span>
+                                        <span class="calc-service-price">от 2 500 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="5000" data-image="{{ url_for('static', filename='images/services/vosstanovlenie-posle-virusnoy-ataki.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Восстановление после вирусной атаки</span>
+                                        <span class="calc-service-price">от 5 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="2000" data-image="{{ url_for('static', filename='images/services/vosstanovlenie-s-zhestkogo-diska.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Восстановление с жёсткого диска</span>
+                                        <span class="calc-service-price">от 2 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1000" data-image="{{ url_for('static', filename='images/services/vosstanovlenie-s-flesh-nakopitelya.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Восстановление с флеш-накопителя</span>
+                                        <span class="calc-service-price">от 1 000 ₽</span>
+                                    </label>
+                                </div>  
+                            </div>
+
+                            <!-- Восстановление данных -->
+                            <div class="calc-category">
+                                <div class="calc-category-title" onclick="toggleCalcAccordion(this)">
+                                    <span>Восстановление данных</span>
+                                    <span class="calc-acc-icon">▼</span>
+                                </div>
+                                <div class="calc-category-body">
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="3000" data-image="{{ url_for('static', filename='images/services/hdd-zhestkiy-disk.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <div class="calc-service-name-wrap">
+                                            <span class="calc-service-name">HDD (жёсткий диск)</span>
+                                            <span class="calc-service-desc">Удалённые файлы / форматирование</span>
+                                        </div>
+                                        <span class="calc-service-price">3 000–8 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="5000" data-image="{{ url_for('static', filename='images/services/ssd-sata.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <div class="calc-service-name-wrap">
+                                            <span class="calc-service-name">SSD (SATA)</span>
+                                            <span class="calc-service-desc">Логические ошибки / удалённые файлы</span>
+                                        </div>
+                                        <span class="calc-service-price">5 000–10 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="5000" data-image="{{ url_for('static', filename='images/services/m2-ssd-nvme.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <div class="calc-service-name-wrap">
+                                            <span class="calc-service-name">M.2 SSD / NVMe</span>
+                                            <span class="calc-service-desc">Логические ошибки</span>
+                                        </div>
+                                        <span class="calc-service-price">5 000–10 000 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Настройка сети -->
+                            <div class="calc-category">
+                                <div class="calc-category-title" onclick="toggleCalcAccordion(this)">
+                                    <span>Настройка сети и интернета</span>
+                                    <span class="calc-acc-icon">▼</span>
+                                </div>
+                                <div class="calc-category-body">
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1500" data-image="{{ url_for('static', filename='images/services/nastroyka-wi-fi-routera.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Настройка Wi-Fi роутера</span>
+                                        <span class="calc-service-price">1 500 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1750" data-image="{{ url_for('static', filename='images/services/nastroyka-lokalnoy-seti.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Настройка локальной сети</span>
+                                        <span class="calc-service-price">1 500–2 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="2000" data-image="{{ url_for('static', filename='images/services/setevye-sluzhby-linux.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Сетевые службы Linux</span>
+                                        <span class="calc-service-price">от 2 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="500" data-image="{{ url_for('static', filename='images/services/ustranenie-problem-s-internetom.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Устранение проблем с интернетом</span>
+                                        <span class="calc-service-price">500 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Прочее -->
+                            <div class="calc-category">
+                                <div class="calc-category-title" onclick="toggleCalcAccordion(this)">
+                                    <span>Прочее</span>
+                                    <span class="calc-acc-icon">▼</span>
+                                </div>
+                                <div class="calc-category-body">
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="7600" data-image="{{ url_for('static', filename='images/services/sborka-kompyutera-na-zakaz.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Сборка компьютера на заказ</span>
+                                        <span class="calc-service-price">от 7 600 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1000" data-image="{{ url_for('static', filename='images/services/modernizatsiya-kompyutera.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Модернизация компьютера</span>
+                                        <span class="calc-service-price">от 1 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="750">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Настройка периферийного оборудования</span>
+                                        <span class="calc-service-price">500–1 000 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1500" data-image="{{ url_for('static', filename='images/services/nastroyka-udalennogo-dostupa-ssh-vnc.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Настройка удалённого доступа (SSH, VNC)</span>
+                                        <span class="calc-service-price">1 500 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1500" data-image="{{ url_for('static', filename='images/services/optimizatsiya-proizvoditelnosti-linux.jpg') }}">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Оптимизация производительности Linux</span>
+                                        <span class="calc-service-price">от 1 500 ₽</span>
+                                    </label>
+                                    <label class="calc-service-item">
+                                        <input type="checkbox" class="repair-checkbox" data-price="1500">
+                                        <span class="calc-service-check">✓</span>
+                                        <span class="calc-service-name">Обновление дистрибутива Linux</span>
+                                        <span class="calc-service-price">от 1 500 ₽</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== БЛОК С ОБЩЕЙ СТОИМОСТЬЮ (СПРАВА, ТЕКСТ СВЕРХУ) ===== -->
+                <div style="flex: 1; min-width: 300px; display: flex;">
+                    <div class="total-container" style="width: 100%; background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%); border-radius: 24px; padding: 30px 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #f0f0f0; display: flex; flex-direction: column; align-items: flex-start; text-align: left;">
+                        <h3 style="font-size: 20.8px; margin-bottom: 20px; color: #333; font-weight: 600; margin-top: 0;">Ваш заказ</h3>
+                        <div class="total-wrapper" style="margin-bottom: 30px; width: 100%;">
+                            <span class="total-label" style="display: block; font-size: 13.6px; color: #666; margin-bottom: 8px;">Общая стоимость:</span>
+                            <span class="total-price" id="totalPrice" style="font-size: 35.2px; font-weight: 800; color: #000; display: block; line-height: 1.2;">0 ₽</span>
+                        </div>
+                        <div class="total-buttons" style="width: 100%;">
+                            <button onclick="resetAllSelections()" class="btn btn-secondary" style="width: 100%; padding: 14px; font-weight: 600;">Сбросить всё</button>
+                        </div>
+                        <p class="total-note" style="font-size: 11.2px; color: #999; margin-top: 20px;">* Выбирайте услуги — стоимость суммируется автоматически</p>
+
+                        <!-- Карусель фото выбранных услуг (скрыта, пока ничего не выбрано) -->
+                        <div class="calc-photo-carousel" id="calcPhotoCarousel" style="display: none;">
+                            <button class="calc-carousel-arrow prev" onclick="calcCarouselPrev()" aria-label="Предыдущее фото"></button>
+                            <div class="calc-carousel-viewport">
+                                <div class="calc-carousel-track" id="calcCarouselTrack"></div>
+                            </div>
+                            <button class="calc-carousel-arrow next" onclick="calcCarouselNext()" aria-label="Следующее фото"></button>
+                            <div class="calc-carousel-counter" id="calcCarouselCounter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- СЕКЦИЯ "ИСТОРИЯ КОМПАНИИ" - ТАЙМЛАЙН -->
+<section id="company-timeline" class="section timeline-section">
+    <div class="container">
+        <h2 class="section-title scroll-fade-up" style="text-align: center; margin-bottom: 50px; "> Краткая история компании</h2>
+
+        <div class="timeline">
+            <div class="timeline-item timeline-top" id="timeline1">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2019</span>
+                    <p class="timeline-text">Текст.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-bottom" id="timeline2">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2020</span>
+                    <p class="timeline-text">Текст.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-top" id="timeline3">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2022</span>
+                    <p class="timeline-text">Текст.</p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-bottom" id="timeline4">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2026</span>
+                    <p class="timeline-text">Текст.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- СЕКЦИЯ "О НАС" - ИСТОРИЯ PLUSPC -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-header">
+            <span class="about-badge">Наша история</span>
+            <h2 class="section-title scroll-fade-up">
+                Как любимое хобби превратилось в дело жизни
+            </h2>
+            <div class="about-decoration" id="aboutDecoration"></div>
+        </div>
+
+        <!-- БЛОК 1: Фото слева, текст справа -->
+        <div class="about-block">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/history_1.jpg') }}" alt="Данила за работой">
+            </div>
+            <div class="about-text">
+                <div class="about-tag">С чего всё началось</div>
+                <h3 class="about-heading">
+                    <span></span>
+                </h3>
+                <p class="about-description" style="margin-top:-35px;">Меня зовут Данила, я <b>мастер</b> и один из <b>основателей</b> нашей компании</p>
+                <p class="about-description"> 
+                    Всё началось в <b>2019 году</b> с обычного любопытства - тогда я просто хотел понять, как устроен этот сложный «организм» внутри.
+                </p>
+            </div>
+        </div>
+
+        <!-- БЛОК 2: Текст слева, фото справа (ЧЕРЕДОВАНИЕ) -->
+        <div class="about-block about-block-reverse">
+            <div class="about-text">
+                <div class="about-tag">Встреча, изменившая всё</div>
+                <p class="about-description">
+                    В <b>2019 году</b> я поступил в университет, где познакомился с двумя Данилами — сооснователями PlusPC. 
+                </p>
+                <div class="about-text">
+
+                <blockquote class="about-quote">
+                    "да, вот такая у нас особенность — все держится на трех Данилах."
+                </blockquote>
+
+                </div>
+                <p class="about-description">
+                    Вместе мы стали погружаться в компьютерную сферу всерьёз: оптимизация, серверное оборудование, маршрутизация — всё это быстро стало <b>нашим миром</b>.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/history_2.jpg') }}" alt="Команда PlusPC">
+            </div>
+        </div>
+
+        <!-- БЛОК 3: Фото слева, текст справа -->
+        <div class="about-block">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/history_3.jpg') }}" alt="Мастерская PlusPC">
+            </div>
+            <div class="about-text">
+                <div class="about-tag">Рождение PlusPC</div>
+                
+                <p class="about-description">
+                    Мысль пришла сама собой: <b>пора создавать свою компанию по ремонту компьютеров.</b>
+                </p>
+                <p class="about-description">
+                   <b>Так появился PlusPC — мир, где не просто чинят технику, а помогают раскрыть её полный потенциал.</p></b>
+                <blockquote class="about-quote">
+                    "За 5 лет накопился немалый багаж знаний и опыта. Каждая деталь имеет значение, а каждый компьютер способен получить вторую жизнь."
+                </blockquote>
+                   <div class="about-buttons" style="text-align: center; display: flex; justify-content: center;">
+    <a href="#services-calculator" class="btn btn-secondary">
+        Наши услуги
+    </a>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- СЕКЦИЯ "НАША МАСТЕРСКАЯ" С ФОТОГАЛЕРЕЕЙ -->
+<section id="workshop" class="section" >
+    <div class="container">
+        <!-- Заголовок -->
+        <h2 class="section-title" style="text-align: center; font-size: 40px; margin-bottom: 20px;">
+            Наша <span style="color: #000;">мастерская</span>
+        </h2>
+        <p style="text-align: center; color: #666; margin-bottom: 50px; font-size: 17.6px;">
+        </p>
+
+        <!-- Галерея с прокруткой -->
+        <div style="position: relative; max-width: 1000px; margin: 0 auto;">
+
+            <!-- Контейнер для фото -->
+            <div id="galleryContainer" style="position: relative; width: 100%; overflow: hidden; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+
+                <!-- Слайдер -->
+                <div id="gallerySlider" style="display: flex; transition: transform 0.5s ease; width: 100%;">
+
+                    <!-- Фото 1 -->
+                    <div class="gallery-slide" style="flex: 0 0 100%;">
+                        <img src="{{ url_for('static', filename='images/workshop_1.jpg') }}"
+                             alt="Мастерская"
+                             style="width: 100%; height: 500px; object-fit: cover; display: block;">
+                    </div>
+
+                    <!-- Фото 2 -->
+                    <div class="gallery-slide" style="flex: 0 0 100%;">
+                        <img src="{{ url_for('static', filename='images/workshop_2.jpg') }}"
+                             alt="Диагностика"
+                             style="width: 100%; height: 500px; object-fit: cover; display: block;">
+                    </div>
+
+                    <!-- Фото 3 -->
+                    <div class="gallery-slide" style="flex: 0 0 100%;">
+                        <img src="{{ url_for('static', filename='images/workshop_3.jpg') }}"
+                             alt="Пайка"
+                             style="width: 100%; height: 500px; object-fit: cover; display: block;">
+                    </div>
+
+                    <!-- Фото 4 -->
+                    <div class="gallery-slide" style="flex: 0 0 100%;">
+                        <img src="{{ url_for('static', filename='images/workshop_4.jpg') }}"
+                             alt="Чистка"
+                             style="width: 100%; height: 500px; object-fit: cover; display: block;">
+                    </div>
+
+                    <!-- Фото 5 -->
+                    <div class="gallery-slide" style="flex: 0 0 100%;">
+                        <img src="{{ url_for('static', filename='images/workshop_5.jpg') }}"
+                             alt="Запчасти"
+                             style="width: 100%; height: 500px; object-fit: cover; display: block;">
+                    </div>
+
+                    <!-- Фото 6 -->
+                    <div class="gallery-slide" style="flex: 0 0 100%;">
+                        <img src="{{ url_for('static', filename='images/workshop_6.jpg') }}"
+                             alt="Команда"
+                             style="width: 100%; height: 500px; object-fit: cover; display: block;">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Стрелки навигации -->
+                <button class="gallery-arrow left" onclick="galleryPrevSlide()"></button>
+                <button class="gallery-arrow right" onclick="galleryNextSlide()"></button>         
+            <div style="display: flex; justify-content: center; gap: 12px; margin-top: 25px;">
+                <span class="gallery-dot" onclick="galleryGoToSlide(0)" style="width: 12px; height: 12px; border-radius: 50%; background: #000; cursor: pointer; transition: all 0.3s;"></span>
+                <span class="gallery-dot" onclick="galleryGoToSlide(1)" style="width: 12px; height: 12px; border-radius: 50%; background: #ccc; cursor: pointer; transition: all 0.3s;"></span>
+                <span class="gallery-dot" onclick="galleryGoToSlide(2)" style="width: 12px; height: 12px; border-radius: 50%; background: #ccc; cursor: pointer; transition: all 0.3s;"></span>
+                <span class="gallery-dot" onclick="galleryGoToSlide(3)" style="width: 12px; height: 12px; border-radius: 50%; background: #ccc; cursor: pointer; transition: all 0.3s;"></span>
+                <span class="gallery-dot" onclick="galleryGoToSlide(4)" style="width: 12px; height: 12px; border-radius: 50%; background: #ccc; cursor: pointer; transition: all 0.3s;"></span>
+                <span class="gallery-dot" onclick="galleryGoToSlide(5)" style="width: 12px; height: 12px; border-radius: 50%; background: #ccc; cursor: pointer; transition: all 0.3s;"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- СЕКЦИЯ "КОМАНДА" - 3 АВАТАРА С РОЛЯМИ -->
+<section id="team" class="section team-section">
+    <div class="container">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">Наша команда</h2>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-avatar-placeholder"><!--  фото Данилы 1 --></div>
+                <div class="team-role-pill">Текст</div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-avatar-placeholder"><!--  фото Данилы 2 --></div>
+                <div class="team-role-pill">Текст</div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-avatar-placeholder"><!--  фото Данилы 3 --></div>
+                <div class="team-role-pill">Текст</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- СЕКЦИЯ КОНТАКТОВ -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">
+            <span>Контакты</span>
+        </h2>
+
+        <!-- ЕДИНАЯ КОЛОНКА: КОНТАКТЫ + СОЦСЕТИ -->
+        <div class="contact-wrapper">
+            <div class="contact-card">
+                <h3 class="card-title">Как с нами связаться</h3>
+
+                <div class="divider"></div>
+
+                <!-- Верхний ряд: контакты слева, мессенджеры справа -->
+                <div class="contact-top-row">
+                    <div class="contact-list">
+                        <!-- Телефон -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Телефон</div>
+                                <a href="tel:+79085468330" class="contact-value">+7 (908) 546-83-30</a>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <a href="mailto:pluspc.community@mail.ru" class="contact-value">pluspc.community@mail.ru</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Соцсети -->
+                    <div class="social-links social-links-column">
+                        <a href="https://t.me/pluspc64" target="_blank" class="social-link telegram">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://vk.com/pluspc64" target="_blank" class="social-link vk">
+                            <i class="fab fa-vk"></i>
+                            <span>VK</span>
+                        </a>
+                        <a href="mailto:pluspc.community@mail.ru" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Почта</span>
+                        </a>
+                        <a href="https://t.me/pluspcreviews" target="_blank" class="social-link reviews">
+                            <i class="fas fa-star"></i>
+                            <span>Отзывы</span>
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
